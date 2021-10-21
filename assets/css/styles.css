@@ -81,8 +81,44 @@ h1 {
   color: #fff;
 }
 
+.btn-bg-main {
+  background-color: #02006e;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 12px;
+  padding-left: 12px;
+  transition: 0.3s ease-in-out;
+  font-weight: 300;
+  border: 1px solid transparent;
+}
+
+.btn-bg-main-outline {
+  border: 1px solid #02006e;
+  background-color: transparent;
+  color: #02006e;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 12px;
+  padding-left: 12px;
+  transition: 0.3s ease-in-out;
+  font-weight: 300;
+}
+
+.btn-bg-main-outline:hover {
+  text-decoration: none;
+  background-color: #02006e;
+  color: #fff;
+}
+
+.btn-bg-main:hover {
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
 @keyframes slide {
-  0% {
+  25% {
     background-image: url("../img/mariachi-image.jpg");
   }
 
