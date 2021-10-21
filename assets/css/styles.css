@@ -212,13 +212,29 @@ button:focus {
 }
 
 .mobile-view .clone-view a {
-  padding: 10px 0px;
+  padding: 10px 20px;
   display: block;
   position: relative;
-  color: black;
+  color: #fff;
   text-align: left;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
+  margin-top: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.mobile-view .clone-view a:hover {
+  color: var(--main-color);
+}
+
+.bg-mobile {
+  background-color: var(--secondary-color);
+}
+
+.mobile-view .clone-view .active {
+  background-color: #8482ff;
+  border-radius: 50px;
+  border-bottom: none;
 }
 
 .cool-link {
