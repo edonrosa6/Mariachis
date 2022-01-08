@@ -4,8 +4,8 @@
 }
 
 :root {
-  --main-color: #f1c40f;
-  --secondary-color: #010039;
+  --main-color: #ffe26c;
+  --secondary-color: #4481eb;
 }
 
 body {
@@ -268,24 +268,83 @@ button:focus {
 }
 
 .mobile-view .clone-view .active {
-  background-color: #8482ff;
+  background-color: deepskyblue;
   border-radius: 50px;
   border-bottom: none;
 }
 
-.cool-link {
-  background: linear-gradient(70deg, var(--main-color), white);
-  font-weight: bold;
-  padding: 15px;
-  color: var(--secondary-color);
-  text-transform: uppercase;
-  border-radius: 50px;
-  transition: 0.3s ease-in-out;
+.btn-group-list {
+  display: flex;
+  flex-flow: wrap;
 }
 
-.cool-link:hover {
-  background: linear-gradient(70deg, var(--main-color), white);
-  color: #01001f;
+.cool-link {
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #4481eb,
+    #04befe,
+    #3f86ed
+  );
+  box-shadow: 0 4px 15px 0 rgba(2, 62, 153, 0.75);
+
+  padding: 15px 23px 15px 23px;
+}
+
+.btn-mas-info {
+  background-color: transparent;
+  padding: 15px 23px 15px 23px;
+  border: 2px solid #4481eb;
+  color: var(--secondary-color);
+
+  box-shadow: 0 4px 15px 0 rgba(2, 62, 153, 0.75);
+
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-mas-info:hover {
+  text-decoration: none;
+  background-color: #f3f3f3;
+}
+
+.hover-btn {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hover-btn:hover {
+  background-position: 100% 0;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  color: white;
+
   text-decoration: none;
 }
 
@@ -357,5 +416,21 @@ hr {
 
   .text-white {
     color: #000 !important;
+  }
+
+  .btn-mas-info {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 765px) {
+  .btn-mas-info {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 436px) {
+  .btn-mas-info {
+    margin-left: 0px;
   }
 }
