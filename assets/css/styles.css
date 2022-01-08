@@ -65,7 +65,7 @@ h1 {
   background-position: center;
   background-blend-mode: soft-light;
   background-color: rgba(0, 0, 0, 0.541);
-  animation: slide 12s infinite;
+  animation: slide 20s infinite;
 }
 
 .title {
@@ -122,7 +122,15 @@ h1 {
     background-image: url("../img/mariachi-image.jpg");
   }
 
-  67% {
+  50% {
+    background-image: url("../img/mariachis-photo.jpeg");
+  }
+
+  75% {
+    background-image: url("../img/mariachis-picture.jpeg");
+  }
+
+  95% {
     background-image: url("../img/mariachis2.jpeg");
   }
 }
