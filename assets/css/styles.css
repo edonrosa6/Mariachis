@@ -170,6 +170,33 @@ button:focus {
   background-color: transparent;
 }
 
+.bg-polygon {
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  background-color: var(--secondary-color);
+}
+
+.btn-canciones {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 49%,
+    var(--secondary-color) 0%,
+    var(--secondary-color) 100%
+  );
+  padding: 15px 25px;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  background-size: 1px 100px;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+}
+
+.btn-canciones:hover {
+  background-position: 00 -50px;
+  text-decoration: none;
+  color: #fff;
+}
+
 .page-wrap:before {
   transition: 0.3s all ease-in-out;
   background: rgba(0, 0, 0, 0.6);
@@ -418,7 +445,7 @@ hr {
   }
 
   .title {
-    font-size: 35px;
+    font-size: 55px;
     margin-top: 102px;
   }
 
@@ -429,11 +456,20 @@ hr {
   .btn-mas-info {
     margin-left: 0px;
   }
+
+  .nabvar {
+    min-height: 75px;
+  }
 }
 
 @media (max-width: 765px) {
   .btn-mas-info {
     margin-left: 20px;
+  }
+
+  .title {
+    font-size: 35px;
+    margin-top: 102px;
   }
 }
 
