@@ -471,6 +471,21 @@ hr {
     font-size: 35px;
     margin-top: 102px;
   }
+
+  .navigate-bar {
+    height: 50px;
+    justify-content: center !important;
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+
+  .vertical {
+    vertical-align: middle;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 436px) {
