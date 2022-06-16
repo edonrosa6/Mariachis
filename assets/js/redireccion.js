@@ -1,0 +1,1 @@
+window.location="https://wa.me/528118476938?text=Hola,%20Deseo%20Informaci%C3%B3n%20del%20Mariachi%20Aguilas%20de%20Oro";
