@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /whatsapp
+
+Sitemap: https://mariachimonterrey.com.mx/sitemap.xml
