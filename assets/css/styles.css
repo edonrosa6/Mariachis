@@ -4,7 +4,7 @@
 }
 
 :root {
-  --main-color: #ffe26c;
+  --main-color: #ffffff;
   --secondary-color: #4481eb;
 }
 
@@ -57,6 +57,10 @@ h1 {
   color: var(--main-color);
 }
 
+.text-title-main {
+  color: var(--secondary-color);
+}
+ 
 .bg-img {
   background-image: url("../img/mariachi-image.jpg");
   background-repeat: no-repeat;
@@ -66,6 +70,10 @@ h1 {
   background-blend-mode: soft-light;
   background-color: rgba(0, 0, 0, 0.541);
   animation: slide 20s infinite;
+}
+
+.img-fluid {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
 }
 
 .title {
@@ -326,6 +334,19 @@ button:focus {
   padding: 15px 23px 15px 23px;
 }
 
+.cool-link-main {
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #4481eb,
+    #04befe,
+    #3f86ed
+  );
+  box-shadow: 0 4px 15px 0 rgba(2, 62, 153, 0.75);
+
+  padding: 15px 23px 15px 23px;
+}
+
 .btn-mas-info {
   background-color: transparent;
   padding: 15px 23px 15px 23px;
@@ -351,6 +372,35 @@ button:focus {
 }
 
 .btn-mas-info:hover {
+  text-decoration: none;
+  background-color: #f3f3f3;
+}
+
+.btn-mas-info-secondary {
+  background-color: transparent;
+  padding: 15px 23px 15px 23px;
+  border: 2px solid #4481eb;
+  color: var(--secondary-color);
+
+  box-shadow: 0 4px 15px 0 rgba(2, 62, 153, 0.75);
+
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-mas-info-secondary:hover {
   text-decoration: none;
   background-color: #f3f3f3;
 }
@@ -490,6 +540,10 @@ hr {
 
 @media (max-width: 436px) {
   .btn-mas-info {
+    margin-left: 0px;
+  }
+
+  .btn-mas-info-secondary {
     margin-left: 0px;
   }
 }
